@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./app.css" />
+    </head>
+    <body>
+        <div class="app">
+            <header>
+                <div class="logo">
+                    <h1>NIKE</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="menu-link">Home</a></li>
+                        <li><a href="#" class="menu-link">Products</a></li>
+                        <li><a href="#" class="menu-link">Contact</a></li>
+                        <li><a href="#" class="menu-link">About</a></li>
+                        <li><a href="#" class="menu-link">Login / Register</a></li>
+                    </ul>
+                    <div class="cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path
+                                d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"
+                            />
+                        </svg>
+                        <span>0</span>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="cart">
+                <h2 class="heading-cart">My cart</h2>
+                <div class="list-cart">
+                    <!-- <div class="cart-item">
+                        <div class="info-product">
+                            <div class="info-product-price">
+                                <img src="./assets/images/product-1.png" alt="" />
+                                <div>$<span class="cart-price">20</span></div>
+                            </div>
+                            <p>NIKE SHOES 01</p>
+                        </div>
+                        <div class="quantity">
+                            <span>-</span>
+                            <span>3</span>
+                            <span>+</span>
+                        </div>
+                        <div class="delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM394.8 466.1C393.2 492.3 372.3 512 346.9 512H101.1C75.75 512 54.77 492.3 53.19 466.1L31.1 128H416L394.8 466.1z"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="info-product">
+                            <div class="info-product-price">
+                                <img src="./assets/images/product-1.png" alt="" />
+                                <div>$<span class="cart-price">20</span></div>
+                            </div>
+                            <p>NIKE SHOES 01</p>
+                        </div>
+                        <div class="quantity">
+                            <span>-</span>
+                            <span>3</span>
+                            <span>+</span>
+                        </div>
+                        <div class="delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM394.8 466.1C393.2 492.3 372.3 512 346.9 512H101.1C75.75 512 54.77 492.3 53.19 466.1L31.1 128H416L394.8 466.1z"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="info-product">
+                            <div class="info-product-price">
+                                <img src="./assets/images/product-1.png" alt="" />
+                                <div>$<span class="cart-price">20</span></div>
+                            </div>
+                            <p>NIKE SHOES 01</p>
+                        </div>
+                        <div class="quantity">
+                            <span>-</span>
+                            <span>3</span>
+                            <span>+</span>
+                        </div>
+                        <div class="delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM394.8 466.1C393.2 492.3 372.3 512 346.9 512H101.1C75.75 512 54.77 492.3 53.19 466.1L31.1 128H416L394.8 466.1z"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="info-product">
+                            <div class="info-product-price">
+                                <img src="./assets/images/product-1.png" alt="" />
+                                <div>$<span class="cart-price">20</span></div>
+                            </div>
+                            <p>NIKE SHOES 01</p>
+                        </div>
+                        <div class="quantity">
+                            <span>-</span>
+                            <span>3</span>
+                            <span>+</span>
+                        </div>
+                        <div class="delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM394.8 466.1C393.2 492.3 372.3 512 346.9 512H101.1C75.75 512 54.77 492.3 53.19 466.1L31.1 128H416L394.8 466.1z"
+                                />
+                            </svg>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="total">Total: <span>0</span>$</div>
+            </div>
+
+            <div class="container">
+                <div class="item">
+                    <div class="img">
+                        <img src="./assets/images/product-1.png" alt="" />
+                    </div>
+                    <div class="info">
+                        <p class="name">NIKE SHOES 01</p>
+                        <div class="price">$<span>10</span></div>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./assets/images/product-2.png" alt="" />
+                    </div>
+                    <div class="info">
+                        <p class="name">NIKE SHOES 02</p>
+                        <div class="price">$<span>20</span></div>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./assets/images/product-3.png" alt="" />
+                    </div>
+                    <div class="info">
+                        <p class="name">NIKE SHOES 03</p>
+                        <div class="price">$<span>30</span></div>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./assets/images/product-4.png" alt="" />
+                    </div>
+                    <div class="info">
+                        <p class="name">NIKE SHOES 04</p>
+                        <div class="price">$<span>40</span></div>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./assets/images/product-5.png" alt="" />
+                    </div>
+                    <div class="info">
+                        <p class="name">NIKE SHOES 05</p>
+                        <div class="price">$<span>50</span></div>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./assets/images/product-6.png" alt="" />
+                    </div>
+                    <div class="info">
+                        <p class="name">NIKE SHOES 06</p>
+                        <div class="price">$<span>60</span></div>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
