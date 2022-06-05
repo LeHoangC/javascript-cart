@@ -4,8 +4,14 @@ const $$ = document.querySelectorAll.bind(document)
 const listCart = $('.list-cart')
 const quantityCart = $('.cart-icon span')
 
+if (!localStorage.cart) {
+    localStorage.setItem('cart', JSON.stringify([]))
+}
+
+console.log(JSON.parse(localStorage.getItem('cart')))
+
 const app = {
-    cart: [],
+    cart: JSON.parse(localStorage.getItem('cart')),
 
     toggle() {
         const cartIcon = $('.cart-icon')
@@ -26,6 +32,7 @@ const app = {
                 quantityCart.innerText = this.cart.length
             }
         })
+        this.handleSetCart()
     },
 
     render() {
@@ -56,7 +63,7 @@ const app = {
         })
 
         listCart.innerHTML = html.join('')
-
+        quantityCart.innerText = this.cart.length
         this.handleDelete('delete')
     },
 
@@ -91,8 +98,13 @@ const app = {
 
                 this.render()
                 this.total()
+                this.handleSetCart()
             }
         })
+    },
+
+    handleSetCart() {
+        localStorage.setItem('cart', JSON.stringify(app.cart))
     },
 
     delete(index) {
@@ -114,6 +126,7 @@ const app = {
         }
         this.total()
         this.render()
+        this.handleSetCart()
     },
 
     handleQuantily() {
@@ -138,6 +151,7 @@ const app = {
 
     start() {
         this.render()
+        this.total()
         this.toggle()
         this.buyItem()
         this.handleQuantily()
